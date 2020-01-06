@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'TasksController@index'); //トップページをタスクリストの「一覧」と同じルーティング
+Route::resource('tasks', 'TasksController'); //全てのアクションの実装
+
+?>

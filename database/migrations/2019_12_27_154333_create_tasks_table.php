@@ -15,7 +15,7 @@ class CreateTasksTable extends Migration
     {
         Schema::create('tasks', function (Blueprint $table) {
             $table->increments('id');
-            $table->String('content'); // 名前が content で、文字列情報を格納するカラムを追加
+            $table->String('content'); // 名前がcontentで、文字列情報を格納するカラムを追加
             $table->timestamps();
         });
     }
